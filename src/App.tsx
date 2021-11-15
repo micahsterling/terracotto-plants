@@ -7,11 +7,9 @@ import { HomeScreen } from "./Home/Home";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <h1>TERRACOTTO PLANTS</h1>
-        <p></p>
-      </header>
+      <Router>
+        <Route exact path="/app" component={HomeScreen} />
+      </Router>
     </div>
   );
 }

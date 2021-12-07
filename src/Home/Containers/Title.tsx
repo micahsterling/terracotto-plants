@@ -50,7 +50,7 @@ export const Title: React.FC = (props) => {
       <TitleHeader>
         <GridImage src="http://www.thewowstyle.com/wp-content/uploads/2015/01/nature-image.jpg" />
         <GridImage src="/public/Terracotto/logo.JPG" />
-        <GridImage src={public/Facetune_08-10-2021-14-36-08.JPG} />
+        {/* <GridImage src={public/Facetune_08-10-2021-14-36-08.JPG} /> */}
         TERRACOTTO PLANTS
       </TitleHeader>
       <TitleBody>3056 W Diversey Ave</TitleBody>

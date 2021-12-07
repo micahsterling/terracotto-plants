@@ -4,6 +4,18 @@ interface Styles {
   wrap: string;
 }
 
+const GridImage = styled.img`
+  max-height: !inherit;
+  max-width: 80%;
+`;
+
+// const logoThumbnail = {
+//   imgSrc: "http://placekitten.com/10/10",
+//   margin: {
+//     margin: "1px 3px 0px 8px",
+//   },
+// };
+
 export const PageContainer = styled.div`
   width: 100%;
   height: 100vh;
@@ -27,16 +39,22 @@ const TitleHeader = styled.h1`
 const TitleBody = styled.p`
   text-align: center;
   color: white;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 300;
   padding: 10px;
 `;
 
-export const Title = () => {
+export const Title: React.FC = (props) => {
   return (
     <TitleContainer>
-      <TitleHeader>TERROCOTTO PLANTS</TitleHeader>
-      <TitleBody></TitleBody>
+      <TitleHeader>
+        <GridImage src="http://www.thewowstyle.com/wp-content/uploads/2015/01/nature-image.jpg" />
+        <GridImage src="/public/Terracotto/logo.JPG" />
+        <GridImage src={public/Facetune_08-10-2021-14-36-08.JPG} />
+        TERRACOTTO PLANTS
+      </TitleHeader>
+      <TitleBody>3056 W Diversey Ave</TitleBody>
+      <TitleBody>Chicago, IL 60647</TitleBody>
     </TitleContainer>
   );
 };

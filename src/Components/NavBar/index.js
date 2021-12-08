@@ -1,5 +1,6 @@
 import React from 'react'
-import {Nav, NavBarContainer, NavLogo} from './NavBarElements'
+import {FaBars} from 'react-icons/fa'
+import {Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavBarElements'
 
 const NavBar = () => {
   return (
